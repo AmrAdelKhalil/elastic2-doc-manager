@@ -1,15 +1,15 @@
 import setuptools
 
 setuptools.setup(
-    name="elastic2-doc-manager",
+    name="elastic2-doc-manager-transaction",
     use_scm_version=True,
     maintainer="mongodb",
-    description="Elastic2 plugin for mongo-connector",
+    description="es2 for mongo-connector",
     platforms=["any"],
-    author="anna herlihy",
-    author_email="mongodb-user@googlegroups.com",
-    url="https://github.com/mongodb-labs/elastic2-doc-manager",
-    install_requires=["mongo-connector>=2.5.0", "importlib_metadata"],
+    author="Amr Adel",
+    author_email="amradelkhalil@gmail.com",
+    url="https://github.com/AmrAdelKhalil/elastic2-doc-manager",
+    install_requires=["mongo-connector-transaction", "importlib_metadata"],
     python_requires=">=3.4",
     extras_require={
         "aws": ["boto3 >= 1.4.0", "requests-aws-sign >= 0.1.2"],
@@ -30,5 +30,5 @@ setuptools.setup(
         "Operating System :: POSIX",
     ],
     keywords=["mongo-connector", "mongodb", "elastic", "elasticsearch"],
-    setup_requires=["setuptools_scm>=1.15"],
+    setup_requires=["setuptools_scm>=1.15"]
 )

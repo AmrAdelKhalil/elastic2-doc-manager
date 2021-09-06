@@ -72,7 +72,7 @@ manually::
 You may have to run ``pip`` with ``sudo``, depending on where you're
 installing and what privileges you have.
 
-.. note:: Please note that before mongo-connector version 2.2.2, the elastic
+note:: Please note that before mongo-connector version 2.2.2, the elastic
 doc manager was packaged with mongo-connector and only supported
 Elasticsearch 1.x.
 
