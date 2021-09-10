@@ -29,6 +29,6 @@ setuptools.setup(
         "Operating System :: Microsoft :: Windows",
         "Operating System :: POSIX",
     ],
-    keywords=["mongo-connector", "mongodb", "elastic", "elasticsearch"],
+    keywords=["mongo-connector-transaction", "mongodb", "elastic", "elasticsearch", "transaction"],
     setup_requires=["setuptools_scm>=1.15"]
 )

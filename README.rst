@@ -5,19 +5,19 @@ elastic2-doc-manager
 The mongo-connector project originated as a MongoDB mongo-labs
 project and is now community-maintained under the custody of YouGov, Plc.
 
-.. image:: https://travis-ci.org/yougov/elastic2-doc-manager.svg?branch=master
-   :alt: View build status
-   :target: https://travis-ci.org/yougov/elastic2-doc-manager
+This is just a fork for the original `elastic2-doc-manager <https://github.com/yougov/elastic2-doc-manager>`__ but
+it is attached to `mongo-connector-transaction <https://github.com/AmrAdelKhalil/mongo-connector>`__ to fix the transaction sync
+issue
 
 Getting Started
 ===============
 
 This package is a document manager for
-`mongo-connector <https://github.com/yougov/mongo-connector>`_ that
+`mongo-connector-transaction <https://github.com/AmrAdelKhalil/mongo-connector>`_ that
 targets Elasticsearch versions 2.x and 5.x -- don't let the name fool you!
 For information on running mongo-connector with Elasticsearch, please see the
 `MongoConnector Usage with Elasticsearch
-<https://github.com/yougov/mongo-connector/wiki/Usage%20with%20ElasticSearch>`_
+<https://github.com/AmrAdelKhalil/mongo-connector/wiki/Usage%20with%20ElasticSearch>`_
 wiki page.
 
 Installation
@@ -26,20 +26,13 @@ Installation
 The installation of the elastic2-doc-manager depends on which version of
 Elasticsearch you are targeting.
 
-Elasticsearch 1.x
------------------
-
-This is the document manager for Elasticsearch 2.x and 5.x. If you
-want to target Elasticsearch 1.x, please install the
-`elastic-doc-manager <https://github.com/yougov/elastic-doc-manager>`_.
-
 Elasticsearch 2.x
 -----------------
 
 For use with an Elasticsearch 2.x server, install with
 `pip <https://pypi.python.org/pypi/pip>`__::
 
-  pip install 'elastic2-doc-manager[elastic2]'
+  pip install 'elastic2-doc-manager-transaction[elastic2]'
 
 Elasticsearch 5.x
 -----------------
@@ -66,7 +59,7 @@ Development
 You can also install the development version of elastic2-doc-manager
 manually::
 
-  git clone https://github.com/yougov/elastic2-doc-manager.git
+  git clone https://github.com/AmrAdelKhalil/elastic2-doc-manager
   pip install -e './elastic2-doc-manager[elastic2]'
 
 You may have to run ``pip`` with ``sudo``, depending on where you're
@@ -86,7 +79,7 @@ Requirements
   The tests are not included in the package from PyPI and can only be acquired
   by cloning this repository on Github::
 
-      git clone https://github.com/yougov/elastic2-doc-manager
+      git clonehttps://github.com/AmrAdelKhalil/elastic2-doc-manager
 
 2. Tox
 
